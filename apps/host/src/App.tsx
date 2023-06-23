@@ -4,7 +4,6 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import { CounterIncrement } from 'app-increment';
 import { CounterDecrement } from 'app-decrement';
-import { Provider, createStore, useAtom } from 'jotai';
 import { countAtom, myStore, incrementAtom, decrementAtom } from 'mystore';
 
 function App() {

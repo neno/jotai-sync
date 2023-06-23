@@ -11,7 +11,6 @@
   "dependencies": {
     "app-decrement": "workspace:^",
     "app-increment": "workspace:^",
-    "jotai": "^2.2.1",
     "mystore": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
