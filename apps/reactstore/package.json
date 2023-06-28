@@ -1,21 +1,25 @@
 {
-  "name": "host",
-  "private": true,
+  "name": "reactstore",
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js"
+    }
+  },
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsc && vite build"
   },
   "dependencies": {
-    "app-decrement": "workspace:^",
-    "app-increment": "workspace:^",
     "jotai": "^2.2.1",
-    "mystore": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "reactstore": "workspace:^"
+    "vite-plugin-dts": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

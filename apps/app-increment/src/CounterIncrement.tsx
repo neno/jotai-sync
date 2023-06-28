@@ -1,4 +1,4 @@
-import { countAtom, incrementAtom, myStore } from 'mystore';
+import { countAtom, incrementAtom, myStore } from 'reactstore';
 
 export function CounterIncrement() {
   const count = myStore.get(countAtom);

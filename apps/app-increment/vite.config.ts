@@ -25,7 +25,7 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'mystore'],
+      external: ['react', 'react-dom', 'mystore', 'reactstore'],
       output: {
         globals: {
           react: 'React',

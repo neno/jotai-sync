@@ -1,4 +1,4 @@
-import { countAtom, decrementAtom, myStore } from 'mystore';
+import { countAtom, decrementAtom, myStore } from 'reactstore';
 
 export function CounterDecrement() {
   return (

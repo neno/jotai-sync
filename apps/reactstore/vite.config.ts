@@ -17,15 +17,14 @@ export default defineConfig({
     minify: false,
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
-      name: 'counter-decrement',
       formats: ['es'],
-      fileName: (format) => `counter-decrement.${format}.js`
+      fileName: (format) => `index.${format}.js`
     },
     commonjsOptions: {
       transformMixedEsModules: true,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'mystore', 'reactstore'],
+      external: ['react', 'react-dom'],
       output: {
         globals: {
           react: 'React',

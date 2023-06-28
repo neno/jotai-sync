@@ -21,7 +21,8 @@
     "mystore": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-plugin-dts": "^2.3.0"
+    "vite-plugin-dts": "^2.3.0",
+    "reactstore": "workspace:^"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

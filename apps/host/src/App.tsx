@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import { CounterIncrement } from 'app-increment';
 import { CounterDecrement } from 'app-decrement';
-import { countAtom, myStore, incrementAtom, decrementAtom } from 'mystore';
+import { Provider } from 'jotai';
+import { countAtom, myStore, incrementAtom, decrementAtom } from 'reactstore';
 
 function App() {
   const [count, setCount] = useState(myStore.get(countAtom));
@@ -19,9 +20,11 @@ function App() {
   return (
     <div className='App'>
       <h1>Host count: {count}</h1>
+
       <button onClick={() => myStore.set(incrementAtom)}>
         count is {count}
       </button>
+
       <div className='grid'>
         <CounterIncrement />
         <CounterDecrement />
